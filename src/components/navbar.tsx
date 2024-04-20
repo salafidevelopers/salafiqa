@@ -5,9 +5,7 @@ import { PiSoundcloudLogo, PiTelegramLogoLight } from "react-icons/pi";
 import { GoChevronDown } from "react-icons/go";
 import { FiFacebook } from "react-icons/fi";
 import { RiTwitterXLine } from "react-icons/ri";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from "@/utils";
 
 const Navbar = ({ id }: { id: string }) => {
   return (

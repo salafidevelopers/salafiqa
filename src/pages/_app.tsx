@@ -2,16 +2,10 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import "@/styles/globals.css";
+import { inter } from "@/utils";
 import type { AppProps } from "next/app";
-import { Inter } from "next/font/google";
 import Head from "next/head";
 import { Fragment, useEffect, useRef, useState } from "react";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
 export default function App({ Component, pageProps }: AppProps) {
   const [minHeight, setMinHeight] = useState(0);
@@ -52,7 +46,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Navbar id="navbar" />
       <Hero forwardedRef={heroRef} />
       <main
-        className={`${inter.className} ${inter.variable} `}
+        className={`${inter.className} ${inter.variable}`}
         style={{ minHeight: `${minHeight}px` }}
       >
         <Component {...pageProps} />
