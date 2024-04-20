@@ -17,13 +17,32 @@
 }
 
 body {
+  position: relative; /* Make the body a positioned parent */
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+body::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the pseudo-element */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire body */
+  height: 100%;
+  background: linear-gradient(#f0e8d5, #f1eee7); /* Background color */
+  opacity: 0.8; /* Adjust the opacity as needed */
+  z-index: -1; /* Place the pseudo-element behind the body content */
+}
+
+body::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the pseudo-element */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire body */
+  height: 100%;
+  background-image: url("/assets/images/main_bg.png"); /* Background image */
+  opacity: 1; /* Adjust the opacity as needed */
+  z-index: -2; /* Place the pseudo-element behind the gradient */
 }
 
 @layer utilities {
