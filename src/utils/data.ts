@@ -3,7 +3,7 @@ export const QUESTIONS = [
     id: 1,
     title: "Sitting in Masjid with feet stretched towards Qiblah",
     questionNo: "# 5795",
-    publishedOn: "24/1/2024",
+    publishedOn: "Jan 1, 2024",
     question:
       "What is the ruling on a person who stretches out his feet in the direction of the Qiblah (Ka'bah-direction faced in Prayer) in a Masjid (mosque)? Also, is it permissible to eat and sleep in a Masjid?",
     answer:
@@ -19,7 +19,7 @@ export const QUESTIONS = [
     id: 2,
     title:
       "Rebuking Others For Praying More Than 11 Rak’ahs [Shaykh ‘Arafat bin Hassan al-Muhammadi]",
-    questionNo: "",
+    questionNo: "# 795",
     publishedOn: "April 2, 2024",
     question:
       "There are some people who rebuke others sternly for praying more than 11 rak’ahs of Night Prayer, or Taraaweeh. What is your opinion about that?",
@@ -31,7 +31,7 @@ export const QUESTIONS = [
     id: 3,
     title:
       "Keen Scholarly Insight of Shaykh Rabee’ ibn Haadee al-Madkhalee (may Allah preserve him) About the Causes of Differing During Crises and Emergencies",
-    questionNo: "",
+    questionNo: "# 395",
     publishedOn: "December 10, 2023",
     question:
       "We are here together, and to Allah is all praise, gathered and talking to one another [cordially], without any differing between us. Yet, I see that when some of us return to their lands, they begin differing, even warning against each other. This happens even though they are all Salafees, their reference points are the same, and they all honor the same scholars of Ahlus-Sunnah in this land. So what is your advice to them, may Allah reward you with goodness?",
@@ -42,7 +42,7 @@ export const QUESTIONS = [
   {
     id: 4,
     title: "Women Traveling for Hajj In Groups Without Any Male Family Members",
-    questionNo: "",
+    questionNo: "# 595",
     publishedOn: "June 29, 2023",
     question:
       "If I came for Hajj in the company of a group of ladies, without any mahram (male family member) of mine, while I am more than 50 years old, is my Hajj considered correct?",
@@ -54,7 +54,7 @@ export const QUESTIONS = [
     id: 5,
     title:
       "A Simple Guide to Dignified Recovery After Religious Neglect [Shaykh Ibn Baaz]",
-    questionNo: "",
+    questionNo: "# 295",
     publishedOn: "February 3, 2023",
     question:
       "An amazing and insightful letter from a great imaam, the mufti and scholar, Shaykh ‘Abdul-‘Azeez ibn Baaz (may Allah have Mercy on him), to an individual who complained of weakness in faith and expressed remorse over abandoning prayers for a time and other serious forms of religious neglect. His answer is highly beneficial and motivating for all of our brothers and sisters who face similar situations; it addresses and corrects a common misunderstanding – that after abandoning the religion, or falling into severe levels of neglect, the process of returning is embarrassing, or extremely difficult, involving making up many prayers, or maybe even unattainable, assuming that someone cannot return because Allah does not guide the one who has repeatedly fallen into neglect and abandonment of his religion… From ‘Abdul-‘Azeez ibn ‘Abdillaah ibn Baaz to the respected Mr. [*****] (name removed), may Allah grant him refuge from the devil’s whisperings and give him success in setting aright both his religious and worldly affairs. To proceed: Your letter reached me, the one in which you explained some things you did and some problems you were facing, fearing their bad consequences. And we did invite you on 1390/7/13 to come visit in person, but that was not easy for you. So at this time we will respond, in shaa’ Allah (if Allah so wills), to the content of your letter: Firstly, you mentioned that you pray sometimes, and sometimes you do not pray. You become determined to repent sometimes, but then you do not fulfill that. Sometimes, this laxness may have led you into abandonment of all the pillars [of Islam], and you have become determined to genuinely repent and put a complete end to those things, yet will your repentance be accepted [you ask]? Or will you be from those whom Allah has described as: “Verily those who believe, then disbelieve, then believe, then disbelieve, and then are increased in disbelief, Allah does not forgive them,” to the end of that Verse [4:137]? And is it required as part of the repentance that you openly declare your testimony of faith for all to hear? And is it a must to take a bath and pray two units of prayer, etc.? The answer: Verily, Allah has clarified in His great Book that He, the Exalted One, accepts the repentance of His worshippers no matter how various and numerous their sins are! As Allah, the Lofty, has said [what means]: Continue reading →",

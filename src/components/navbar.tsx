@@ -5,9 +5,12 @@ import { PiSoundcloudLogo, PiTelegramLogoLight } from "react-icons/pi";
 import { GoChevronDown } from "react-icons/go";
 import { FiFacebook } from "react-icons/fi";
 import { RiTwitterXLine } from "react-icons/ri";
-import { inter } from "@/utils";
+import { getCurrentDate, inter } from "@/utils";
 
 const Navbar = ({ id }: { id: string }) => {
+  // Get the current date and log it
+  const currentDate = getCurrentDate();
+  console.log(currentDate);
   return (
     <nav
       id={id}
@@ -21,7 +24,7 @@ const Navbar = ({ id }: { id: string }) => {
         <FiFacebook size={24} />
         <RiTwitterXLine size={24} />
       </div>
-      <p className="text-lg">Monday 10 Rajab 1445 - 22 January 2024</p>
+      <p className="text-lg">{currentDate}</p>
       <div className="flex gap-8">
         <div className="flex gap-2 items-center">
           <GoChevronDown />

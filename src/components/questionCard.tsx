@@ -1,3 +1,4 @@
+import { formatDate } from "@/utils";
 import React from "react";
 import { CiCalendar } from "react-icons/ci";
 
@@ -32,7 +33,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
       <div className="flex gap-3 items-center text-[#11565299]">
         <p className="cursor-pointer">{questionNo}</p>
         <div className="flex gap-1 items-center cursor-pointer">
-          <CiCalendar /> <p>{publishedOn}</p>
+          <CiCalendar /> <p>{formatDate(publishedOn)}</p>
         </div>
       </div>
     </article>
