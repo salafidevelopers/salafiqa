@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 const Footer = () => {
   return (
     <footer
+      id="footer"
       className={`bg-[#19504D] text-white flex justify-between items-center px-10 py-5 ${inter.className}`}
     >
       <div className="flex gap-3 items-center">
@@ -26,12 +27,12 @@ const Footer = () => {
       </div>
       <Image src={logo} alt="Logo" />
       <div className="flex gap-3 items-center">
-        <AiOutlineInstagram size={24} />
-        <PiSoundcloudLogo size={24} />
-        <AiOutlineYoutube size={24} />
-        <PiTelegramLogoLight size={24} />
-        <FiFacebook size={24} />
-        <RiTwitterXLine size={24} />
+        <AiOutlineInstagram size={24} className="cursor-pointer" />
+        <PiSoundcloudLogo size={24} className="cursor-pointer" />
+        <AiOutlineYoutube size={24} className="cursor-pointer" />
+        <PiTelegramLogoLight size={24} className="cursor-pointer" />
+        <FiFacebook size={24} className="cursor-pointer" />
+        <RiTwitterXLine size={24} className="cursor-pointer" />
       </div>
     </footer>
   );

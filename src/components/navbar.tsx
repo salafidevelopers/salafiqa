@@ -9,9 +9,10 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const Navbar = () => {
+const Navbar = ({ id }: { id: string }) => {
   return (
     <nav
+      id={id}
       className={`bg-[#f0e8d5] p-5 flex justify-between items-center text-[#19504D] px-10  ${inter.className}`}
     >
       <div className="flex gap-3 items-center">
