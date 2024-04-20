@@ -17,7 +17,7 @@ const Footer = () => {
         <input
           type="email"
           placeholder="Email address"
-          className="py-2 bg-transparent border border-gray-400 rounded-md px-2 placeholder:font-medium placeholder:font-inter"
+          className="py-2 bg-transparent border border-gray-400 rounded-md px-2 placeholder:font-light placeholder:font-inter"
         />
         <button className="bg-[#A28340] px-3 py-2 rounded-md text-white">
           Sign up
