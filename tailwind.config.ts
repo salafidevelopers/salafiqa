@@ -33,6 +33,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      gridTemplateColumns: {
+        // added new 4 column grid as new4
+        repeat4: "repeat(4, minmax(100px, 500px))",
+        repeatFit: "repeat(auto-fill,minmax(min-content,1fr))",
+        responsive270: "repeat(auto-fill,minmax(270px,1fr))",
+      },
       fontFamily: {
         inter: ["var(--font-inter)", ...fontFamily.sans],
         mono: ["var(--font-roboto-mono)"],
