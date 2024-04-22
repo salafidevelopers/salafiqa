@@ -95,6 +95,41 @@ export const CATEGORIES = [
     count: 13,
   },
   {
+    title: "Events",
+    id: 1314,
+    count: 13,
+  },
+  {
+    title: "General Reminders",
+    id: 134,
+    count: 13,
+  },
+  {
+    title: "Hadeeth Studies",
+    id: 114,
+    count: 3,
+  },
+  {
+    title: "History",
+    id: 124,
+    count: 12,
+  },
+  {
+    title: "General Reminders",
+    id: 14,
+    count: 13,
+  },
+  {
+    title: "Hadeeth Studies",
+    id: 1142,
+    count: 3,
+  },
+  {
+    title: "History",
+    id: 1234,
+    count: 12,
+  },
+  {
     title: "Fiqh (Islamic Rulings)",
     id: 85,
     count: 159,
@@ -113,5 +148,4 @@ export const CATEGORIES = [
       { title: "Zakaat", id: 91, count: 7 },
     ],
   },
-  // Add more categories as needed
 ];

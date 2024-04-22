@@ -7,15 +7,24 @@ import { clsx } from "clsx";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 
-export function cn(...inputs: any[]) {
-  return twMerge(clsx(inputs));
-}
-
 export const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
+
+export function cn(...inputs: any[]) {
+  return twMerge(clsx(inputs));
+}
+
+export const convertToUrlFriendly = (text: string): string => {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "") // Remove special characters except whitespace and hyphens
+    .replace(/\s+/g, "-") // Replace whitespace with hyphens
+    .replace(/--+/g, "-") // Replace consecutive hyphens with a single hyphen
+    .trim(); // Trim leading and trailing whitespace
+};
 
 export const formatDate = (dateString: string) => {
   const date = new Date(dateString);

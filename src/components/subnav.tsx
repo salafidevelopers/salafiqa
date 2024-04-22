@@ -4,6 +4,9 @@ import { BiCategory } from "react-icons/bi";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { PiScroll } from "react-icons/pi";
 import { MdOutlineMosque } from "react-icons/md";
+import Link from "next/link";
+import { cn } from "@/utils";
+import { useRouter } from "next/router";
 
 const subnavItems = [
   {
@@ -30,13 +33,14 @@ const subnavItems = [
 
 function SubnavItem({ title, link }: { title: string; link: string }) {
   return (
-    <a href={link} className="text-[#19504D] hover:text-[#19504D99]  py-2">
+    <Link href={link} className={cn(" py-2")}>
       {title}
-    </a>
+    </Link>
   );
 }
 
 const Subnav = () => {
+  const router = useRouter();
   return (
     <nav className="flex items-center gap-5 justify-between border-b border-b-[#00000012] pb-4">
       <div className="relative flex-1">
@@ -55,9 +59,12 @@ const Subnav = () => {
         {subnavItems.map((item, index) => (
           <li
             key={index}
-            className="flex items-center gap-1 text-[#19504D] hover:text-[#19504D99]"
+            className={cn(
+              "flex items-center gap-1 text-[#19504D] hover:text-[#19504D99]",
+              router.pathname === item.link ? "text-[#19504D99]" : ""
+            )}
           >
-            <item.icon className="" />
+            <item.icon />
             <SubnavItem title={item.title} link={item.link} />
           </li>
         ))}

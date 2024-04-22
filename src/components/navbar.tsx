@@ -6,11 +6,11 @@ import { GoChevronDown } from "react-icons/go";
 import { FiFacebook } from "react-icons/fi";
 import { RiTwitterXLine } from "react-icons/ri";
 import { getCurrentDate, inter } from "@/utils";
+import LocaleSwitcher from "./localeSwitcher";
 
 const Navbar = ({ id }: { id: string }) => {
   // Get the current date and log it
   const currentDate = getCurrentDate();
-  console.log(currentDate);
   return (
     <nav
       id={id}
@@ -31,6 +31,7 @@ const Navbar = ({ id }: { id: string }) => {
           <p>English</p>
           <GiWorld />
         </div>
+        {/* <LocaleSwitcher /> */}
         <button className="bg-[#19504D] px-3 py-2 rounded-md text-white">
           Login
         </button>
