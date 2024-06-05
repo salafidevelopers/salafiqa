@@ -1,4 +1,4 @@
-import { CATEGORIES } from "@/utils/data";
+import { CATEGORIES } from "../utils/data";
 import React from "react";
 import Tags from "./tags";
 

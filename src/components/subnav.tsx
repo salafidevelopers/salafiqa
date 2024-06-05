@@ -5,7 +5,7 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { PiScroll } from "react-icons/pi";
 import { MdOutlineMosque } from "react-icons/md";
 import Link from "next/link";
-import { cn } from "@/utils";
+import { cn } from "../utils";
 import { useRouter } from "next/router";
 
 const subnavItems = [
@@ -42,7 +42,7 @@ function SubnavItem({ title, link }: { title: string; link: string }) {
 const Subnav = () => {
   const router = useRouter();
   return (
-    <nav className="flex items-center gap-5 justify-between border-b border-b-[#00000012] pb-4">
+    <nav className="flex items-center gap-5 justify-between border-b border-b-[#00000012] pb-4 flex-wrap">
       <div className="relative flex-1">
         <input
           type="text"
@@ -55,7 +55,7 @@ const Subnav = () => {
           className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400"
         />
       </div>
-      <ul className="flex items-center gap-8">
+      <ul className="flex items-center gap-8 flex-wrap md:gap-y-2">
         {subnavItems.map((item, index) => (
           <li
             key={index}

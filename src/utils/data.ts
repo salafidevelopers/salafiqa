@@ -1,4 +1,14 @@
-export const QUESTIONS = [
+export type Question = {
+  id: number;
+  title: string;
+  questionNo: string;
+  publishedOn: string;
+  question: string;
+  answer: string;
+  answeredby: string[];
+};
+
+export const QUESTIONS: Question[] = [
   {
     id: 1,
     title: "Sitting in Masjid with feet stretched towards Qiblah",
@@ -57,7 +67,9 @@ export const QUESTIONS = [
     questionNo: "# 295",
     publishedOn: "February 3, 2023",
     question:
-      "An amazing and insightful letter from a great imaam, the mufti and scholar, Shaykh ‘Abdul-‘Azeez ibn Baaz (may Allah have Mercy on him), to an individual who complained of weakness in faith and expressed remorse over abandoning prayers for a time and other serious forms of religious neglect. His answer is highly beneficial and motivating for all of our brothers and sisters who face similar situations; it addresses and corrects a common misunderstanding – that after abandoning the religion, or falling into severe levels of neglect, the process of returning is embarrassing, or extremely difficult, involving making up many prayers, or maybe even unattainable, assuming that someone cannot return because Allah does not guide the one who has repeatedly fallen into neglect and abandonment of his religion… From ‘Abdul-‘Azeez ibn ‘Abdillaah ibn Baaz to the respected Mr. [*****] (name removed), may Allah grant him refuge from the devil’s whisperings and give him success in setting aright both his religious and worldly affairs. To proceed: Your letter reached me, the one in which you explained some things you did and some problems you were facing, fearing their bad consequences. And we did invite you on 1390/7/13 to come visit in person, but that was not easy for you. So at this time we will respond, in shaa’ Allah (if Allah so wills), to the content of your letter: Firstly, you mentioned that you pray sometimes, and sometimes you do not pray. You become determined to repent sometimes, but then you do not fulfill that. Sometimes, this laxness may have led you into abandonment of all the pillars [of Islam], and you have become determined to genuinely repent and put a complete end to those things, yet will your repentance be accepted [you ask]? Or will you be from those whom Allah has described as: “Verily those who believe, then disbelieve, then believe, then disbelieve, and then are increased in disbelief, Allah does not forgive them,” to the end of that Verse [4:137]? And is it required as part of the repentance that you openly declare your testimony of faith for all to hear? And is it a must to take a bath and pray two units of prayer, etc.? The answer: Verily, Allah has clarified in His great Book that He, the Exalted One, accepts the repentance of His worshippers no matter how various and numerous their sins are! As Allah, the Lofty, has said [what means]: Continue reading →",
+      "An amazing and insightful letter from a great imaam, the mufti and scholar, Shaykh ‘Abdul-‘Azeez ibn Baaz (may Allah have Mercy on him), to an individual who complained of weakness in faith and expressed remorse over abandoning prayers for a time and other serious forms of religious neglect. His answer is highly beneficial and motivating for all of our brothers and sisters who face similar situations; it addresses and corrects a common misunderstanding – that after abandoning the religion, or falling into severe levels of neglect, the process of returning is embarrassing, or extremely difficult, involving making up many prayers, or maybe even unattainable, assuming that someone cannot return because Allah does not guide the one who has repeatedly fallen into neglect and abandonment of his religion… ",
+    answer:
+      "From ‘Abdul-‘Azeez ibn ‘Abdillaah ibn Baaz to the respected Mr. [*****] (name removed), may Allah grant him refuge from the devil’s whisperings and give him success in setting aright both his religious and worldly affairs. To proceed: Your letter reached me, the one in which you explained some things you did and some problems you were facing, fearing their bad consequences. And we did invite you on 1390/7/13 to come visit in person, but that was not easy for you. So at this time we will respond, in shaa’ Allah (if Allah so wills), to the content of your letter: Firstly, you mentioned that you pray sometimes, and sometimes you do not pray. You become determined to repent sometimes, but then you do not fulfill that. Sometimes, this laxness may have led you into abandonment of all the pillars [of Islam], and you have become determined to genuinely repent and put a complete end to those things, yet will your repentance be accepted [you ask]? Or will you be from those whom Allah has described as: “Verily those who believe, then disbelieve, then believe, then disbelieve, and then are increased in disbelief, Allah does not forgive them,” to the end of that Verse [4:137]? And is it required as part of the repentance that you openly declare your testimony of faith for all to hear? And is it a must to take a bath and pray two units of prayer, etc.? The answer: Verily, Allah has clarified in His great Book that He, the Exalted One, accepts the repentance of His worshippers no matter how various and numerous their sins are! As Allah, the Lofty, has said [what means]: Continue reading →",
     answeredby: ["Shaykh Ibn Baaz"],
   },
 ];

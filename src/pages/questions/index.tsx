@@ -1,9 +1,8 @@
 import ContentLayout from "@/components/contentLayout";
-import { CATEGORIES, QUESTIONS } from "@/utils/data";
-import { IoFolderOutline } from "react-icons/io5";
+import { CATEGORIES, QUESTIONS } from "../../utils/data";
 import React from "react";
 import Link from "next/link";
-import { convertToUrlFriendly } from "@/utils";
+import { convertToUrlFriendly } from "../../utils";
 import { TbArrowBackUp } from "react-icons/tb";
 import QuestionCard from "@/components/questionCard";
 

@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import "@/styles/globals.css";
-import { inter } from "@/utils";
+import { inter } from "../utils";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Fragment, useEffect, useRef, useState } from "react";

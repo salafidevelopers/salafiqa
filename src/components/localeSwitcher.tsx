@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { MdTranslate } from "react-icons/md";
-import { cn } from "@/utils";
+import { cn } from "../utils";
 
 const LocaleSwitcher = () => {
   const { locale, locales, defaultLocale, asPath } = useRouter();

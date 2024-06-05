@@ -1,4 +1,5 @@
-import { formatDate } from "@/utils";
+import { formatDate } from "../utils";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { CiCalendar } from "react-icons/ci";
 
@@ -47,7 +48,9 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
 
   return (
     <article className="border border-[#00000026] px-2 py-3 rounded-md space-y-2">
-      <p className="text-[#115652] text-lg cursor-pointer">{title}</p>
+      <Link href={`/questions/${question.id}`}>
+        <p className="text-[#115652] text-lg cursor-pointer">{title}</p>
+      </Link>
       <p className="text-[#00000099]">
         <span
           className="line-clamp-3 overflow-hidden"
@@ -55,6 +58,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
         >
           Q: {truncatedQuestion}
         </span>
+
         <span className="text-[#A28340] cursor-pointer">Read more</span>
       </p>
       <div className="flex gap-3 items-center text-[#11565299]">

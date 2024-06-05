@@ -5,7 +5,7 @@ import { PiSoundcloudLogo, PiTelegramLogoLight } from "react-icons/pi";
 import { RiTwitterXLine } from "react-icons/ri";
 import logo from "../../public/assets/images/logo.png";
 import Image from "next/image";
-import { inter } from "@/utils";
+import { inter } from "../utils";
 
 const Footer = () => {
   return (

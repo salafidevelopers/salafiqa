@@ -1,6 +1,6 @@
 import ContentLayout from "@/components/contentLayout";
 import QuestionCard from "@/components/questionCard";
-import { CATEGORIES, QUESTIONS } from "@/utils/data";
+import { CATEGORIES, QUESTIONS } from "../utils/data";
 import Link from "next/link";
 
 export default function Home() {

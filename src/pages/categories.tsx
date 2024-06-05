@@ -1,10 +1,10 @@
 import ContentLayout from "@/components/contentLayout";
-import { CATEGORIES } from "@/utils/data";
+import { CATEGORIES } from "../utils/data";
 import { IoFolderOutline } from "react-icons/io5";
 import React from "react";
 import Link from "next/link";
 import { TbArrowBackUp } from "react-icons/tb";
-import { convertToUrlFriendly } from "@/utils";
+import { convertToUrlFriendly } from "../utils";
 
 const Categories = () => {
   //   const text = "Convert This Text into URL Friendly Format!";

@@ -5,7 +5,7 @@ import { PiSoundcloudLogo, PiTelegramLogoLight } from "react-icons/pi";
 import { GoChevronDown } from "react-icons/go";
 import { FiFacebook } from "react-icons/fi";
 import { RiTwitterXLine } from "react-icons/ri";
-import { getCurrentDate, inter } from "@/utils";
+import { getCurrentDate, inter } from "../utils";
 import LocaleSwitcher from "./localeSwitcher";
 
 const Navbar = ({ id }: { id: string }) => {
@@ -14,7 +14,7 @@ const Navbar = ({ id }: { id: string }) => {
   return (
     <nav
       id={id}
-      className={`bg-[#f0e8d5] p-5 flex justify-between items-center text-[#19504D] px-10  ${inter.className}`}
+      className={`bg-[#f0e8d5] p-5 flex md:flex-wrap justify-between items-center text-[#19504D] px-10  ${inter.className}`}
     >
       <div className="flex gap-3 items-center">
         <AiOutlineInstagram size={24} />
